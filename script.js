@@ -4,7 +4,7 @@ function updateClock() {
 	const mins = currentDate.getMinutes() + secs / 60;
 	const hours = (currentDate.getHours() % 12) + mins / 60;
 
-	console.log("current time:", `${hours}:${mins}:${secs}`);
+	// console.log("current time:", `${hours}:${mins}:${secs}`);
 	const secHandRotate = document
 		.getElementById("seconds")
 		.setAttribute("transform", `rotate(${secs * (360 / 60)}, 244, 251)`);
