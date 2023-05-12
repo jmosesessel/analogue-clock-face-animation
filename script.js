@@ -6,6 +6,7 @@ function updateClock(){
 
     console.log('current time:', `${hours}:${mins}:${secs}`)
     const secHandRotate = document.getElementById('seconds').setAttribute('transform', `rotate(${secs * (360/60)}, 244, 251)`)
+    const minHandRotate = document.getElementById('minutes').setAttribute('transform', `rotate(${mins * (360/60)}, 244, 251)`)
 }
 
 setInterval(()=>{
